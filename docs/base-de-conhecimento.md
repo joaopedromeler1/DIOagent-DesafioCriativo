@@ -1,5 +1,7 @@
 # Base de conhecimento da clínica (modelo)
 
+> Na implementação, esses dados vivem em `data/clinica.json` (hoje com valores fictícios). Este documento descreve o que precisa ser preenchido.
+
 O agente só pode responder com informações oficiais. Preencha este modelo com os dados reais
 da clínica e envie-o junto com o system prompt (ou carregue-o como base de conhecimento/RAG).
 Tudo que estiver entre `[colchetes]` precisa ser substituído; o que ficar vazio o agente deve
