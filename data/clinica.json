@@ -1,0 +1,57 @@
+{
+  "_aviso": "DADOS FICTÍCIOS para demonstração. Substitua pelos dados oficiais da clínica antes de usar em produção. Campos null significam 'informação indisponível': o agente deve encaminhar para atendimento humano.",
+  "clinica": {
+    "nome": "Clínica Sorriso Exemplo",
+    "endereco": "Rua Exemplo, 123 - Centro",
+    "horario_funcionamento": "Segunda a sexta, das 08h às 18h",
+    "canal_atendimento_humano": "Atendente humano pelo próprio WhatsApp",
+    "formas_pagamento_reserva": ["Pix"],
+    "politica_cancelamento": null
+  },
+  "profissionais": [
+    {
+      "id": "dra_ana",
+      "nome": "Dra. Ana Exemplo",
+      "especialidade": "Clínica geral e estética",
+      "agenda": {
+        "dias_semana": [0, 1, 2, 3, 4],
+        "periodos": [["08:00", "12:00"], ["13:00", "18:00"]]
+      }
+    },
+    {
+      "id": "dr_bruno",
+      "nome": "Dr. Bruno Exemplo",
+      "especialidade": "Clínica geral",
+      "agenda": {
+        "dias_semana": [1, 3],
+        "periodos": [["09:00", "12:00"], ["14:00", "17:00"]]
+      }
+    }
+  ],
+  "procedimentos": [
+    {
+      "id": "consulta_avaliacao",
+      "nome": "Consulta de avaliação",
+      "duracao_min": 30,
+      "profissionais": ["dra_ana", "dr_bruno"],
+      "valor_total": 150.00,
+      "orientacoes": null
+    },
+    {
+      "id": "limpeza",
+      "nome": "Limpeza (profilaxia)",
+      "duracao_min": 60,
+      "profissionais": ["dra_ana", "dr_bruno"],
+      "valor_total": 200.00,
+      "orientacoes": null
+    },
+    {
+      "id": "clareamento",
+      "nome": "Clareamento dental",
+      "duracao_min": 60,
+      "profissionais": ["dra_ana"],
+      "valor_total": 800.00,
+      "orientacoes": null
+    }
+  ]
+}
